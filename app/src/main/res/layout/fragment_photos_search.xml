@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/common_horizontal_padding"
+            android:paddingRight="@dimen/common_horizontal_padding"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:elevation="4dp"
+            android:background="@android:color/white">
+
+        <EditText
+                android:id="@+id/photos_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_search"
+                android:paddingEnd="24dp"
+                android:drawablePadding="8dp"
+                android:inputType="textAutoComplete"/>
+
+        <ProgressBar
+                android:id="@+id/photo_search_progress"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end|center_vertical"
+                android:visibility="gone"
+                tools:visibility="visible"
+        />
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/photos_search_results"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</LinearLayout>

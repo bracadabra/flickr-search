@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Flickr</string>
+
+    <string name="photos_search_input_hint">Photos</string>
 </resources>
